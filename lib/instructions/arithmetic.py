@@ -1,10 +1,10 @@
 
-import lib.instruction
+from lib.instruction import OneByteInstruction
 
 # Add register to accumulator
-class Add_Acc_Reg(Instruction):
+class ADD_Acc_Reg(OneByteInstruction):
     pass
 
 # Add memory to accumulator
-class Add_Acc_Mem(Instruction):
+class ADD_Acc_Mem(OneByteInstruction):
     pass

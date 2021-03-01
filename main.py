@@ -3,10 +3,13 @@
 import argparse
 
 from lib.config import Config
+from lib.state import State
+from lib.generator import StreamGenerator
 
 def main(args):
-    configuration = Config(args.config)
-    state = State(configuration)
+    config = Config(args.config)
+    state = State(config)
+    StreamGenerator(state)
 
 if __name__ == "__main__":
     parser = argparse.ArgumentParser()

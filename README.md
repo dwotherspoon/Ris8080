@@ -1,2 +1,2 @@
 # Ris8080
-An intel 8080 random instruction tool.
+An Intel 8080 random instruction tool, that nobody asked for.
