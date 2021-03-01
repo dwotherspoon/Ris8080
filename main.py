@@ -9,7 +9,8 @@ from lib.generator import StreamGenerator
 def main(args):
     config = Config(args.config)
     state = State(config)
-    StreamGenerator(state)
+    sgen = StreamGenerator(state)
+    sgen.generate()
 
 if __name__ == "__main__":
     parser = argparse.ArgumentParser()

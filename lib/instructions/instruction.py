@@ -21,17 +21,6 @@ class BlockItem:
     def size(self):
         raise NotImplementedError("Unimplemented size method")
 
-class Label(BlockItem):
-    def __init__(self, text):
-        self._text = text
-
-    def assemble(self):
-        return self._text + ':'
-    
-    @property
-    def size(self):
-        return 0
-
 class InstructionOptions:
     pass
 
@@ -56,3 +45,14 @@ class ThreeByteInstruction(Instruction):
     @property
     def size(self):
         return 3
+
+class Label(BlockItem):
+    def __init__(self, text):
+        self._text = text
+
+    def assemble(self):
+        return self._text + ':'
+    
+    @property
+    def size(self):
+        return 0
