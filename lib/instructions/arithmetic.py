@@ -27,9 +27,10 @@ class ADC_Acc_Mem(OneByteInstruction):
     def assemble(self):
         return "adc M"
 
+# Add immediate to accumulator with carry
 class ACI_Acc_Imm8(TwoByteInstruction):
     def assemble(self):
-        return "adc {0:x}h".format(self.options['imm8'])
+        return "aci {0:x}h".format(self.options['imm8'])
 
 # Add register pair to HL
 class DAD_HL_RegPair(OneByteInstruction):
