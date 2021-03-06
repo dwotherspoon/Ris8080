@@ -1,0 +1,26 @@
+{
+    "weights" : {
+        "arithmetic" : {
+            "ADD_Acc_Reg"    : 1,
+            "ADD_Acc_Mem"    : 1,
+            "ADI_Acc_Imm8"   : 1,
+            "ADC_Acc_Reg"    : 1,
+            "ADC_Acc_Mem"    : 1,
+            "ACI_Acc_Imm8"   : 1,
+            "DAD_HL_RegPair" : 1,
+            "INR_Reg"        : 1,
+            "INR_Mem"        : 1,
+            "DCR_Reg"        : 1,
+            "DCR_Mem"        : 1,
+            "INX_RegPair"    : 1,
+            "DCX_RegPair"    : 1,
+            "SUB_Acc_Reg"    : 1,
+            "SUB_Acc_Mem"    : 1,
+            "SUI_Acc_Imm"    : 1,
+            "SBB_Acc_Reg"    : 1,
+            "SBB_Acc_Mem"    : 1,
+            "SBI_Acc_Imm"    : 1,
+            "DAA_Acc"        : 1
+        }
+    }
+}

@@ -18,5 +18,5 @@ class RegisterPair(IntEnum):
 
 
 class Operation(IntFlag):
-    Read  = auto()
-    Write = auto()
+    Read  = 1
+    Write = 2

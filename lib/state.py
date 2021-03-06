@@ -1,3 +1,8 @@
+import random
+
+from lib.register import Register, RegisterPair
+from lib.instructions.instruction import Instruction
+
 class RegisterState:
     @property
     def readable(self):
@@ -66,3 +71,7 @@ class State:
             # Technically not a true register pair
             'SP' : SPRegisterState(config.sp_initial)
         }
+    
+    def choose_item(self):
+        key = random.choice(list(self._config.weights.keys()))
+        return Instruction.registry()[key]

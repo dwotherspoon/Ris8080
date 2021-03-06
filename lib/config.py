@@ -1,6 +1,10 @@
+import json
+
 class Config:
     def __init__(self, fname):
-        pass
+        with open(fname, 'rt') as fp:
+            config_data = json.load(fp)
+        self.weights = config_data['weights']['arithmetic']
     
     # TODO: Calculate this
     @property
