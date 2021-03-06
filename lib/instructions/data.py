@@ -1,11 +1,11 @@
 
-from lib.instruction import OneByteInstruction, TwoByteInstruction
+from lib.instructions.instruction import OneByteInstruction, TwoByteInstruction, ThreeByteInstruction
 
 # Move immediate into register
 class MVI_Reg_Imm8(TwoByteInstruction):
     pass
 
-# Move immediate into memory 
+# Move immediate into memory
 class MVI_Mem_Imm8(TwoByteInstruction):
     pass
 
